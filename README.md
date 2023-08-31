@@ -29,3 +29,9 @@ docker push vijay2181/vijay-python-3.9:latest
 docker pull vijay2181/vijay-python-3.9:latest
 docker run -it --rm vijay2181/vijay-python-3.9:latest python3.9 --version
 ```
+
+- if you want to keep alive container, then use below comamnd
+
+```
+docker run -d --name sample --restart always vijay2181/vijay-python-3.9:latest sleep infinity
+```
